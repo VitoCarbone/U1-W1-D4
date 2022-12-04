@@ -1,18 +1,139 @@
 /* IMPOSTAZIONI GENERALI */
-                
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*FONT PRESO DA GOOGLE FONTS NEL RIPIQUADRO <style>*/
+ body{
+    background-image:url(../sfondo.png);
+    padding: 30px;
+    font-family: 'Poppins', sans-serif;
+    /*font-family COPIATO DIRETTAMENTE DA GOOGLE FONTS*/
+
+ }               
 
 /* HEADER */
-div{
+header{ 
+    background-color: #016c88;
+    padding: 20px;
+    color: white;
+   /*COLORE DEL FONT*/ 
+   text-align: center;
+}
+h1{
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    /*font-weight:bold è il grassetto*/
+}
+.logo{
+    width: 100%;
+  /*GRANDEZZA DELL'IMMAGINE APPLICATA CON CLASS=.LOGO*/
+    margin-bottom: 30px;
 
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    line-height: 180%;
+    /*LINE-HEIGHT È LO SPAZIO TRA I COLLEGAMENTI (HOME, ARTICOLI, LAVORA CON NOI) L'INTERLINEA TRA LE PAROLE. 100% è LA GRANDEZZA CHE SI è DATO AL TESTO*/
+}
+nav a:visited{
+    color: white;
+}
+nav a::before{
+    content: ">>";
+}
+nav a::after{
+    content: "<<";
+    );
 }
 /* MAIN */
+main{
+    background-color: white;
+    padding: 20px;
+    /*BORDO DEL MAIN*/
+}
+h2{
+    font-size: 220pt;
+    line-height: 120%;
+    margin-bottom: 20px;
+}
+.article-metadata{
+    color: gray;
+}
+p span{
+    color:#ac2e74;
+}
+main p{
+    /*TUTTI I PARAGRAFI DEL MAIN*/
+    margin-bottom: 20px;
+    /*DISTANZIARE I PARAGRAZI DAL BASSO*/
+    margin-top: 30px;
+    /*MARGINE DA SOPRA*/
+}
+ul,ol{
+    /*margin-left: 40px;
+    /*MARGINE DELLE LISTE DA SINISTRA*/
+    margin: 30px;  
+}
 
-/* ELEMENTI NEL MAIN - ARTICLE */
-span{
-    color: red;
+li{
+    line-height: 200%;
+    /*DARE UNO SPAZIO */
+}
+li span{ 
+    /* li span VIENE RICHIAMATO SOLO LO SPAN DENTRO LI*/
+    background-color: #e3dee0;
+    /*COLORE DI SFONDO DELLO SPAN*/
+    border: gray solid;
+    /*CON QUESTO SI VA A COLORARE IL BORDINO */
+    border-radius: 5px; 
+    /* SERVE AD ARROTONDARE GLI ANGOLI*/    
 }
 /* TABELLE */
+caption{/*È SIA IN GRASSETTO CHE IN CORSIVO*/
+    font-weight: bold;
+    /*GRASSETTO*/
+    font-style: italic;
+    /*CORSIVO*/
+}
+table{
+    width: 100%;
+    /*LARGA COME IL GENITORE SE SI SCRIVE width:100% GRANDE COME TUTTO LO SPAZIO DISPONIBILE*/ 
+    text-align: center;
+    /*TUTTO IL TESTO DELLA TABELLA È CENTRATO*/
+    border-bottom: blue solid;
+}
 
+thead{
+    background-color: #4067c0;
+}
+tbody tr:nth-of-type(even){/*ANDREMO A SELEZIONARE NEL T BODY, LE TR(LE RIGHE DELLA TABELLA)PARI*/
+    background-color: #eeeeee;
+    border-top: 1px gray solid;
+    border-bottom: 1px gray solid;
+}
+table *{ /*TUTTI GLI ELEMENTI DENTRO LA TABLE AVRANNO LO SPAZIO DI*/
+    padding: 10px;
+}
+iframe{
+    border-radius: 20px;
+}
+h4{
+    color:#01a7cc ;
+    text-decoration: underline solid;
+}
+h4::before{/*INSERISCE QUALCOSA PRIMA DEL TESTO CHE INSERIREMO*/
+    
+}
+.data{
+    text-align: right;
+    
+}
+.corr{
+    background-color: lightgray;
+    border: 1px gray solid;
+    padding: 20px;
+}
 /* FORM */
 
 /* ELEMENTI NELL' ASIDE */
